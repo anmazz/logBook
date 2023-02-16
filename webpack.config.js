@@ -9,6 +9,7 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
+      favicon: "./public/spiral.gif",
       template: path.join(__dirname, "public", "index.html"),
     }),
   ],
@@ -26,10 +27,28 @@ module.exports = {
         exclude: /node_modules/,
         use: ["babel-loader"],
       },
+      {
+        test: /\.s[ac]ss$/i,
+        use: [
+          // Creates `style` nodes from JS strings
+          "style-loader",
+          // Translates CSS into CommonJS
+          "css-loader",
+          // Compiles Sass to CSS
+          "sass-loader",
+        ],
+      },
+      {
+        test: /\.(png|svg|jpg|jpeg|gif)$/i,
+        type: 'asset/resource',
+      },
     ],
   },
   // pass all js files through Babel
   resolve: {
     extensions: ["*", ".js", ".jsx"],
+    alias: {
+        'react-native$': 'react-native-web'
+      }
   }
 };
