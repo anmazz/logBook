@@ -9,7 +9,7 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      favicon: "./public/spiral.gif",
+      favicon: "./public/images/spiral.gif",
       template: path.join(__dirname, "public", "index.html"),
     }),
   ],

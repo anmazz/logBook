@@ -1,7 +1,37 @@
 $base-font-family: 'museo-sans', Arial, sans-serif;
-$display-bold: 'museo-sans-display';
+$display-bold: 'museo-sans-display', Arial, sans-serif;
+$secondary-font-family: "cabrito", sans-serif;
+$base-font-size:   16px !default;
 
+@mixin relative-font-size($ratio) {
+  font-size: $base-font-size * $ratio;
+}
 
 body {
     font-family: $base-font-family;
+}
+
+.medium-bold {
+    @include relative-font-size(0.9);
+    font-family: $display-bold;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.cabrito-bold {
+    font-family: $secondary-font-family;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.cabrito-500 {
+    font-family: "cabrito-normal";
+    font-weight: 500;
+    font-style: normal;
+}
+
+.cabrito-bold-medium-gray {
+    @include relative-font-size(0.9);
+    @extend .cabrito-500;
+    color: darkgray;
 }

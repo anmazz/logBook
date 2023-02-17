@@ -19,7 +19,10 @@
     "start": "webpack serve --mode development"
   },
   "dependencies": {
+    "@mui/material": "^5.11.9",
+    "bootstrap": "^5.2.3",
     "react": "^18.2.0",
+    "react-bootstrap": "^2.7.2",
     "react-dom": "^18.2.0",
     "react-native-web": "^0.18.12"
   }

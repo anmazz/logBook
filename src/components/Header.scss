@@ -1,11 +1,10 @@
 @import '../sass/main.scss';
 
 .topnav {
-    // background-color: $secondary-color;
     overflow: hidden;
     font-family: $display-bold;
     font-weight: 800;
-    border-bottom: 2px $light-gray solid;
+    border-bottom: 2px gray(90) solid;
     margin-bottom: -3px;
     
     a {

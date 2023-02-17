@@ -1,0 +1,33 @@
+@import '../../sass/main.scss';
+
+$cover-size: 8rem;
+
+@function relative-size($ratio) {
+    @return $cover-size * $ratio;
+}
+
+.book-cover {
+    @extend .drop-shadow;
+    height: $cover-size;
+    width: relative-size(calc(6/9));
+    background-color: black;
+    float: right;
+    border-radius: relative-size(calc(1/25));
+}
+
+.book-info-container {
+    gap: relative-size(calc(1/10));
+}
+
+.text-info-container {
+    max-width: 60%;
+}
+
+
+.author-name {
+    @include relative-font-size(.8);
+}
+
+p {
+    margin: unset;
+}

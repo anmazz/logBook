@@ -1,4 +1,19 @@
 $background-color: beige;
 $secondary-color: #4DA4BE;
 $primary-dark: #171717;
-$light-gray: #F5F5F5;
+
+
+@for $i from 10 through 100 {
+    .gray-#{$i} {
+        color: lighten(black, $i)
+    }
+}
+
+// Generates gray values based on percentage. 100 = white, 0 = black
+@function gray($percentage) {
+    @return lighten(black, $percentage);
+}
+
+.drop-shadow {
+    filter: drop-shadow(0.2rem 0.2rem 0px gray(75))
+}

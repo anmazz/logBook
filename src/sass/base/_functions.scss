@@ -1,0 +1,13 @@
+@function ratio($ratio) {
+    @return $base-font-size * $ratio;
+}
+
+@for $i from 1 through 100 {
+    .width-#{$i} {
+        width: percentage(calc($i/100));
+    }
+
+    .height-#{$i} {
+        height: percentage(calc($i/100));
+    }
+}

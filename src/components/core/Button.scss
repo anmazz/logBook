@@ -1,0 +1,14 @@
+@import '../../sass/base/colors';
+@import '../../sass/base/base';
+
+.button {
+    @extend .drop-shadow;
+    @extend .rounded-corners;
+    background-color: white;
+    border: unset;
+
+    input[type='button'] {
+        background-color: transparent;
+         border: unset;
+    }
+}
