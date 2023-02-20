@@ -12,7 +12,7 @@ body {
 }
 
 .medium-bold {
-    @include relative-font-size(0.9);
+    @include relative-font-size(0.8);
     font-family: $display-bold;
     font-weight: 700;
     font-style: normal;
@@ -27,6 +27,12 @@ body {
 .cabrito-500 {
     font-family: "cabrito-normal";
     font-weight: 500;
+    font-style: normal;
+}
+
+.cabrito-400 {
+    font-family: "cabrito-normal";
+    font-weight: 400;
     font-style: normal;
 }
 

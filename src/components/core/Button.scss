@@ -1,14 +1,40 @@
 @import '../../sass/base/colors';
 @import '../../sass/base/base';
+@import '../../sass/base/typography';
+@import "bootstrap";
 
-.button {
+
+.button  {
     @extend .drop-shadow;
+    @extend .ps-2, .pe-2;
     @extend .rounded-corners;
+    @extend .cabrito-400;
     background-color: white;
     border: unset;
+    cursor: pointer;
 
     input[type='button'] {
         background-color: transparent;
          border: unset;
     }
+
+    &.activeButton {
+        background-color: $secondary-color;
+        
+
+        > input[type='button'] {
+            // @extend .cabrito-bold;
+            color: white;
+        }
+    }
+}
+
+.unset {
+    background-color: unset;
+    color: unset;
+    border: unset;
+}
+
+select {
+    @extend .unset;
 }

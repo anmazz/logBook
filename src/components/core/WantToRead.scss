@@ -1,0 +1,11 @@
+@import '../../sass/base/_colors.scss';
+@import '../../sass/base/_typography.scss';
+.update-item-name {
+    color: $secondary-color;
+}
+
+.timestamp {
+    @include relative-font-size(0.8);
+    color: gray(60);
+    font-weight: 300;
+}

@@ -1,0 +1,15 @@
+@import '../../sass/base/_functions.scss';
+@import '../../sass/base/_colors.scss';
+
+$pic-size: ratio(2.5);
+.profile-pic {
+    width: $pic-size;
+    height: $pic-size;
+    border-radius: 100%;
+}
+
+.status-container {
+    // background-color: gray(92);
+    padding: ratio(1);
+    border-radius: 0.5rem;
+}

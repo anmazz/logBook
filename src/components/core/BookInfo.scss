@@ -1,4 +1,6 @@
-@import '../../sass/main.scss';
+@import '../../sass/base/functions';
+@import '../../sass/base/colors';
+@import '../../sass/base/base';
 
 $cover-size: 8rem;
 
@@ -17,6 +19,10 @@ $cover-size: 8rem;
 
 .book-info-container {
     gap: relative-size(calc(1/10));
+
+    &.bg {
+        @extend .gray-background;
+    }
 }
 
 .text-info-container {
@@ -29,5 +35,6 @@ $cover-size: 8rem;
 }
 
 p {
-    margin: unset;
+    margin: unset !important;
+    padding: unset !important;
 }

@@ -1,0 +1,23 @@
+div[class*="dropdown__"] {
+    border: unset;
+    box-shadow: unset;
+    // margin: unset;
+    // padding: unset;
+}
+
+div {
+    .dropdown__option{
+        padding-left: 0.5rem;
+        display: flex;
+    }
+
+    .dropdown__indicator, .dropdown__value-container {
+        padding: unset;
+    }
+
+    
+}
+
+input.dropdown__input {
+    color: transparent !important;
+  }

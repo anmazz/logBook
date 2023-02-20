@@ -3,3 +3,9 @@
 .rounded-corners {
     border-radius: $border-radius;
 }
+
+.gray-background {
+    background-color: $background-gray;
+    padding: ratio(1);
+    border-radius: 0.5rem;
+}

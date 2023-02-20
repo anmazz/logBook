@@ -3,6 +3,8 @@ import Header from './Header';
 import './App.scss';
 import CurrentlyReading from './currently-reading/CurrentlyReading';
 import StatusUpdate from './status-update/StatusUpdate';
+import ElementTitle from './core/ElementTitle';
+import WantToRead from './core/WantToRead';
 
 const App = () => {
   return (
@@ -19,9 +21,14 @@ const App = () => {
             <CurrentlyReading />
           </View>
           <View style={{flex: 0.4}}>
-            <StatusUpdate />
+            <ElementTitle title="STATUS"/>
+            <StatusUpdate className="mb-4" />
+            <ElementTitle title="UPDATES"/>
+            <WantToRead name="JANE"></WantToRead>
           </View>
-          <View style={{backgroundColor: 'lightblue', flex: 0.3}} />
+          <View style={{flex: 0.3, paddingLeft: '2rem'}}>
+            <ElementTitle title="RECOMMENDED"/>
+          </View>
         </View>
       </div>
     </div>

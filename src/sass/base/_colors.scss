@@ -1,6 +1,13 @@
 $background-color: beige;
 $secondary-color: #4DA4BE;
 $primary-dark: #171717;
+$background-gray: #eeeeee;
+
+:root {
+    --background-color: #{$background-color};
+    --secondary-color: #{$secondary-color};
+    --background-gray: #{$background-gray};
+}
 
 
 @for $i from 10 through 100 {

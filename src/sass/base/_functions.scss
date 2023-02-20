@@ -1,3 +1,4 @@
+@import './typography';
 @function ratio($ratio) {
     @return $base-font-size * $ratio;
 }
