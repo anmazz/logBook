@@ -1,13 +1,13 @@
-import {View, StyleSheet } from 'react-native';
+import * as React from 'react';
+import {View } from 'react-native';
 import { flexStyles } from '../util/stylesheets';
 import './ProfilePicColumnContainer.scss';
 
 
-const ProfilePicColumnContainer = (props) => {
-    let profileWidth = 0.1;
+const ProfilePicColumnContainer = (props: { className?: string; children: React.ReactNode }) => {
     return (
-    <View nativeID="profile-item-container-column" style={{ flexDirection: 'row', gap: '.5rem' }}>
-        <View style={{flex: {profileWidth}}}>
+    <View nativeID="profile-item-container-column" style={{ flexDirection: 'row', gap: .5 }}>
+        <View>
             <img 
             className="profile-pic" 
             src="https://ichef.bbci.co.uk/images/ic/256xn/p076jc1w.jpg"/>

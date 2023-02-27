@@ -2,7 +2,7 @@ const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
-  entry: "./src/index.js",
+  entry: "./src/index.tsx",
   output: {
     filename: "main.js",
     path: path.resolve(__dirname, "build"),
@@ -23,9 +23,9 @@ module.exports = {
     // exclude node_modules
     rules: [
       {
-        test: /\.(js|jsx)$/,
+        test: /\.(ts|tsx)$/,
         exclude: /node_modules/,
-        use: ["babel-loader"],
+        use: 'ts-loader',
       },
       {
         test: /\.s[ac]ss$/i,
@@ -46,7 +46,7 @@ module.exports = {
   },
   // pass all js files through Babel
   resolve: {
-    extensions: ["*", ".js", ".jsx"],
+    extensions: ["*", ".ts", ".tsx", ".js"],
     alias: {
         'react-native$': 'react-native-web'
       }

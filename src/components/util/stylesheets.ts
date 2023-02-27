@@ -1,8 +1,8 @@
 import { StyleSheet } from "react-native";
 
 
-let gap = '0.5rem';
-let borderRadius = '0.3rem';
+let gap = 3;
+let borderRadius = 3;
 const flexStyles = StyleSheet.create({
     flexfill: {
         flexGrow: 1,
@@ -32,8 +32,7 @@ const flexStyles = StyleSheet.create({
 const textBoxStyles = StyleSheet.create({
     textArea: {
         border: 'unset',
-        borderRadius: borderRadius,
-        resize: 'none'
+        borderRadius: 2
     },
     searchBar: {
         paddingTop: gap,

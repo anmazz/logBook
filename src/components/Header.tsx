@@ -1,10 +1,10 @@
 import './Header.scss';
 import Logo from './spiral.svg';
-import { Image, View, TextInput } from 'react-native-web';
+import { Image, View, TextInput } from 'react-native';
 import { flexStyles, textBoxStyles } from './util/stylesheets';
 import { Icon } from '@mui/material';
 import { Icon as Iconify } from '@iconify/react';
-import React from 'react';
+import * as React from 'react';
 
 
 const Header = () => {
@@ -22,22 +22,25 @@ const Header = () => {
                     <a href="#browse">Browse</a>
                     <a href="#community">Community</a>
                 </View>
-                <View style={[flexStyles.row, flexStyles.center, {gap: '0.5rem'}]}>
+                <View style={[flexStyles.row, flexStyles.center, {gap: 8}]}>
+
                     <div className='search-bar'>
                         <TextInput
                             style={[textBoxStyles.textArea, textBoxStyles.searchBar, {backgroundColor: "var(--background-gray)"}]}
-                            className="text-area"
                             onChangeText={onChangeText}
                             value={text}
                         />
                         <Icon style={{position: 'absolute', right: 0, paddingTop: '0.2rem', marginRight: '0.3rem'}}>search</Icon>
                     </div>
-                    <Icon>favorite</Icon>
-                    <Iconify icon="mdi:bookshelf" style={{ fontSize: '24px' }}/>
+
+                    <View style={[flexStyles.row, {gap: 5}]}>
+                        <Icon>favorite</Icon>
+                        <Iconify icon="mdi:bookshelf" style={{ fontSize: '24px' }}/>
+                    </View>
+                    
                     <Image
-                        className="user-profile"
-                        source="https://ichef.bbci.co.uk/images/ic/256xn/p076jc1w.jpg"
-                        style={{backgroundColor:'black', borderRadius: '100%', height: '1.5rem', width: '1.5rem', marginRight: '2rem'}}/>
+                        source={{uri: "https://ichef.bbci.co.uk/images/ic/256xn/p076jc1w.jpg"}}
+                        style={{backgroundColor:'black', borderRadius: 100, height: '1.5rem', width: '1.5rem', marginRight: '2rem'}}/>
                 </View>
             </View>
         </div>

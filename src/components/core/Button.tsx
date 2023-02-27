@@ -2,8 +2,19 @@ import './Button.scss';
 import Icon from '@mui/material/Icon';
 import * as React from 'react';
 
-class Button extends React.Component {
-    constructor(props) {
+interface ButtonProps {
+    label: string,
+    iconLeft?: string,
+    iconRight?: string,
+    className?: string
+}
+
+interface ButtonState {
+    active: boolean
+}
+
+class Button extends React.Component<ButtonProps, ButtonState> {
+    constructor(props: ButtonProps) {
         super(props);
         this.state = {active: false};
       }

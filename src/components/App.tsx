@@ -4,7 +4,8 @@ import './App.scss';
 import CurrentlyReading from './currently-reading/CurrentlyReading';
 import StatusUpdate from './status-update/StatusUpdate';
 import ElementTitle from './core/ElementTitle';
-import WantToRead from './core/WantToRead';
+import WantToRead from './update-widgets/WantToRead';
+import * as React from 'react';
 
 const App = () => {
   return (
@@ -24,7 +25,7 @@ const App = () => {
             <ElementTitle title="STATUS"/>
             <StatusUpdate className="mb-4" />
             <ElementTitle title="UPDATES"/>
-            <WantToRead name="JANE"></WantToRead>
+            <WantToRead name="OSCAR"></WantToRead>
           </View>
           <View style={{flex: 0.3, paddingLeft: '2rem'}}>
             <ElementTitle title="RECOMMENDED"/>
