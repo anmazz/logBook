@@ -1,6 +1,6 @@
+import * as React from 'react';
 import './Button.scss';
 import Icon from '@mui/material/Icon';
-import * as React from 'react';
 
 interface ButtonProps {
     label: string,

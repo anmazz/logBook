@@ -1,8 +1,8 @@
 import * as React from 'react';
-import { View } from 'react-native';
-import { Book } from '../../data/Book';
 import BookInfo from '../core/BookInfo';
 import ProfilePicColumnContainer from '../core/ProfilePicColumnContainer';
+import { View } from 'react-native';
+import { Book } from '../../data/Book';
 import { flexStyles } from '../util/stylesheets';
 
 interface BaseItemProps { name: string, action: string}

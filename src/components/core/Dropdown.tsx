@@ -27,10 +27,10 @@ function DropdownStyled() {
     <Select components={{
         IndicatorSeparator: () => null,
         Option: (optionProps) => 
-        <Option {...optionProps}>
-          <Icon fontSize='small'>{optionProps.data.icon}</Icon>
-          <span className='ps-1'>{optionProps.data.label}</span>
-        </Option>
+          <Option {...optionProps}>
+            <Icon fontSize='small'>{optionProps.data.icon}</Icon>
+            <span className='ps-1'>{optionProps.data.label}</span>
+          </Option>
       }}
       options={options}
       defaultValue={options[0]}

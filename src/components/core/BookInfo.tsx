@@ -1,6 +1,6 @@
+import * as React from 'react';
 import './BookInfo.scss';
 import { Rating } from '@mui/material';
-import * as React from 'react';
 import { Book } from '../../data/Book';
 
 

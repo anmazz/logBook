@@ -6,7 +6,7 @@ import './ProfilePicColumnContainer.scss';
 
 const ProfilePicColumnContainer = (props: { className?: string; children: React.ReactNode }) => {
     return (
-    <View nativeID="profile-item-container-column" style={{ flexDirection: 'row', gap: .5 }}>
+    <View nativeID="profile-item-container-column" style={{ flexDirection: 'row', gap: 14 }}>
         <View>
             <img 
             className="profile-pic" 

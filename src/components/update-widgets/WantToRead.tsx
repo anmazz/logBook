@@ -1,10 +1,11 @@
-import './WantToRead.scss';
 import * as React from 'react';
-import {View} from 'react-native';
+import './WantToRead.scss';
 import BookInfo from '../core/BookInfo';
-import { flexStyles } from '../util/stylesheets';
 import ProfilePicColumnContainer from '../core/ProfilePicColumnContainer';
+import { View } from 'react-native';
+import { flexStyles } from '../util/stylesheets';
 import { BookMap } from '../../data/BookList';
+
 
 interface WantToReadProps {
     name: string;

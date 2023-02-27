@@ -1,7 +1,7 @@
+import * as React from 'react';
 import './CurrentlyReading.scss';
 import BookInfo from '../core/BookInfo';
 import ElementTitle from '../core/ElementTitle';
-import * as React from 'react';
 import { BookMap } from '../../data/BookList';
 import { Book } from '../../data/Book';
 

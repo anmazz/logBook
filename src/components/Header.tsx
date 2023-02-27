@@ -1,10 +1,10 @@
+import * as React from 'react';
 import './Header.scss';
 import Logo from './spiral.svg';
 import { Image, View, TextInput } from 'react-native';
 import { flexStyles, textBoxStyles } from './util/stylesheets';
 import { Icon } from '@mui/material';
 import { Icon as Iconify } from '@iconify/react';
-import * as React from 'react';
 
 
 const Header = () => {

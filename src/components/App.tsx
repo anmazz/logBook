@@ -1,11 +1,12 @@
-import {View} from 'react-native';
-import Header from './Header';
+import * as React from 'react';
 import './App.scss';
+import Header from './Header';
 import CurrentlyReading from './currently-reading/CurrentlyReading';
 import StatusUpdate from './status-update/StatusUpdate';
 import ElementTitle from './core/ElementTitle';
 import WantToRead from './update-widgets/WantToRead';
-import * as React from 'react';
+import { View } from 'react-native';
+
 
 const App = () => {
   return (
