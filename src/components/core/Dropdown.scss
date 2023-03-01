@@ -3,6 +3,13 @@ div[class*="dropdown__"] {
     box-shadow: unset;
     // margin: unset;
     // padding: unset;
+
+}
+
+.dropdown {
+    overflow: visible;
+    position: relative;
+    z-index: 10000;
 }
 
 div {

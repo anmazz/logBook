@@ -28,7 +28,7 @@ class WantToRead extends React.Component<WantToReadProps, {}> {
                             </div>
                             <div className='timestamp'>10 min. ago</div>
                     </View>
-                    <BookInfo book={book}/>
+                    <BookInfo book={book} rating background summary large/>
                 </View>
            </ProfilePicColumnContainer>
         );

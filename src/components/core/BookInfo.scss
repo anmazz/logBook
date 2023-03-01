@@ -3,6 +3,7 @@
 @import '../../sass/base/base';
 
 $cover-size: 8rem;
+$large-cover-ratio: 1.8;
 
 @function relative-size($ratio) {
     @return $cover-size * $ratio;
@@ -15,6 +16,7 @@ $cover-size: 8rem;
     background-color: black;
     float: right;
     border-radius: relative-size(calc(1/25));
+    flex: none;
 }
 
 .book-info-container {
@@ -25,13 +27,26 @@ $cover-size: 8rem;
     }
 }
 
-.text-info-container {
-    max-width: 60%;
+.cover-title-container {
+    gap: relative-size(calc(1/10));
 }
 
 
 .author-name {
     @include relative-font-size(.8);
+}
+
+.large {
+    .author-name {
+        @include relative-font-size(1.1);
+    }
+    .book-title {
+        @include relative-font-size(1.3);
+    }
+    &.book-cover {
+        height: $cover-size * $large-cover-ratio;
+        width: relative-size(calc(6/9) * $large-cover-ratio);
+    }
 }
 
 p {

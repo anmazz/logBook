@@ -23,7 +23,7 @@ class BaseUpdateItem extends React.Component<BaseItemProps, {}> {
                         </div>
                         <div className='timestamp'>10 min. ago</div>
                 </View>
-                <BookInfo book={book} background/>
+                <BookInfo book={book} rating/>
             </View>
                 
            </ProfilePicColumnContainer>

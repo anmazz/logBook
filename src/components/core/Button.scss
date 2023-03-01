@@ -5,7 +5,7 @@
 
 
 .button  {
-    @extend .drop-shadow;
+    
     @extend .ps-2, .pe-2;
     @extend .rounded-corners;
     @extend .cabrito-400;
@@ -26,6 +26,10 @@
             // @extend .cabrito-bold;
             color: white;
         }
+    }
+
+    &.dropShadow {
+        @extend .drop-shadow;
     }
 }
 

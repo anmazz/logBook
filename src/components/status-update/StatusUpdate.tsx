@@ -12,26 +12,27 @@ import { BookMap } from '../../data/BookList';
 
 const StatusUpdate = (props: { className: string; }) => {
     return (
-        <ProfilePicColumnContainer className={'status-container ' + (props.className ?? "")}>
+        <ProfilePicColumnContainer 
+            className={'status-container ' + (props.className ?? "")} statusContainer>
             <View style={flexStyles.row}>
                 <View style={[flexStyles.column, {flex: 0.5}]}>
                     <BookInfo book={BookMap['The Great Gatsby']}/>
                 </View>
-                <View style={[flexStyles.column, {flex: 0.5}]}>
+                <View style={[flexStyles.column, {flex: 0.5, justifyContent: 'space-between'}]}>
                     <View style={[flexStyles.row, {alignItems: 'center'}]}>
-                        <input type="text" defaultValue='97' style={{ maxWidth:'50px' }}></input>
+                        <input type="text" defaultValue='97' style={{ maxWidth:'40px', border: 'none' }}></input>
                         <p>of 243 pages</p>
                     </View>
-                    <View style={[flexStyles.row, { gap: 10 }]}>
-                        <Button className="pt-1 pb-1" label="finished"/>
-                        <Button className="pt-1 pb-1" label="did not finish"/>
+                    <View style={[flexStyles.row, { gap: 6 }]}>
+                        <Button className="pt-1 pb-1" label="finished" noDropShadow/>
+                        <Button className="pt-1 pb-1" label="did not finish" noDropShadow/>
                     </View>
                 </View>
             </View>
             <View style={flexStyles.flexfill}>
                 <div>
-                    <TextField placeholder="Status update" className="flex-fill mb-2 ps-2 pt-1"/>
-                    <View style={[ flexStyles.row ]}>
+                    <TextField placeholder="Status update" className="flex-fill mb-2 ps-2 mt-3"/>
+                    <View style={[ flexStyles.row, { gap: 6, justifyContent: 'flex-end'}]}>
                         <Dropdown />
                         <Button label="update"/>
                     </View>
